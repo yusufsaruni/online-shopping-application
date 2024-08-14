@@ -1,0 +1,72 @@
+.input-style {
+  width: 60%;
+  padding: 12px 20px;
+  margin-left:20%;
+  box-sizing: border-box;
+  border: none;
+  background-color:white;
+  color: black;
+  font-size: 16px;
+}
+
+input[type=text]:focus, textarea:focus,button:focus{
+  outline: 4px solid orange;
+  background-color:rgb(224, 255, 219);     /* oranges! yey */
+}
+
+textarea
+{
+	height: 250px;
+	font-size: 16px;
+}
+
+.button {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin: 4px 2px 4px 20%;
+}
+
+.button:hover {
+  background-color: #555555;
+  color: white;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+  text-wrap: wrap;
+  padding-bottom: 1rem;
+}
+
+.success-message {
+  color: yellow;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
+  text-wrap: wrap;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+div.response{
+  text-align: center;
+  
+}
+hr
+{
+	width: 60%
+}
+
+h3
+{
+	text-align: center;
+	color: white;
+}

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>signup</servlet-name>
+        <servlet-class>harmo.handlers.SignupHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup</servlet-name>
+        <url-pattern>/signupHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>login</servlet-name>
+        <servlet-class>harmo.handlers.LoginHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>login</servlet-name>
+        <url-pattern>/loginHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>forgot</servlet-name>
+        <servlet-class>harmo.handlers.ForgotHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>forgot</servlet-name>
+        <url-pattern>/forgotHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>adminHeader</servlet-name>
+        <servlet-class>harmo.Admin.AdminHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>adminHeader</servlet-name>
+        <url-pattern>/adminHeader</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>addProduct</servlet-name>
+        <servlet-class>harmo.Admin.AddProductHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addProduct</servlet-name>
+        <url-pattern>/addProductHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>productView</servlet-name>
+        <servlet-class>harmo.Admin.ProductViewHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>productView</servlet-name>
+        <url-pattern>/productView</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>editProduct</servlet-name>
+        <servlet-class>harmo.Admin.EditProductHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>editProduct</servlet-name>
+        <url-pattern>/editProductHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>logout</servlet-name>
+        <servlet-class>harmo.handlers.LogoutHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>logout</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>clientProductView</servlet-name>
+        <servlet-class>harmo.client.ClientProductViewHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>clientProductView</servlet-name>
+        <url-pattern>/clientProductView</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addToCart</servlet-name>
+        <servlet-class>harmo.client.AddToCartHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addToCart</servlet-name>
+        <url-pattern>/addToCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cartHandler</servlet-name>
+        <servlet-class>harmo.client.CartHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cartHandler</servlet-name>
+        <url-pattern>/cartHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>decreaseIncrease</servlet-name>
+        <servlet-class>harmo.userBean.DecreaseIncrease</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>decreaseIncrease</servlet-name>
+        <url-pattern>/incDecr</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>removeFromCart</servlet-name>
+        <servlet-class>harmo.userBean.RemoveFromCart</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>removeFromCart</servlet-name>
+        <url-pattern>/removeFromCart</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>PaymentOrderHandler</servlet-name>
+        <servlet-class>harmo.userBean.PaymentOrderHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PaymentOrderHandler</servlet-name>
+        <url-pattern>/PaymentOrderHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>billHandler</servlet-name>
+        <servlet-class>harmo.userBean.BillHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>billHandler</servlet-name>
+        <url-pattern>/billHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>myOrdersHandler</servlet-name>
+        <servlet-class>harmo.userBean.MyOrdersHandler</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>myOrdersHandler</servlet-name>
+        <url-pattern>/myOrdersHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>detailsView</servlet-name>
+        <servlet-class>harmo.changeDetails.DetailsView</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>detailsView</servlet-name>
+        <url-pattern>/detailsView</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>changePassword</servlet-name>
+        <servlet-class>harmo.changeDetails.ChangePasswordHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changePassword</servlet-name>
+        <url-pattern>/changePassword</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addressChangeHandler</servlet-name>
+        <servlet-class>harmo.changeDetails.AddressChangeHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addressChangeHandler</servlet-name>
+        <url-pattern>/addressChangeHandler</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>changeSecurityQuestion</servlet-name>
+        <servlet-class>harmo.changeDetails.ChangeSecurityQuestionHandler</servlet-class>
+
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>changeSecurityQuestion</servlet-name>
+        <url-pattern>/changeSecurityQuestion</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>changeNumber</servlet-name>
+        <servlet-class>harmo.changeDetails.ChangeMobileNumber</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changeNumber</servlet-name>
+        <url-pattern>/changeNumber</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>messageHandler</servlet-name>
+        <servlet-class>harmo.userBean.MessageHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>messageHandler</servlet-name>
+        <url-pattern>/messageHandler</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>messageReceivedHandler</servlet-name>
+        <servlet-class>harmo.Admin.MessageReceivedHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>messageReceivedHandler</servlet-name>
+        <url-pattern>/messageReceivedHandler</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ordersReceivedHandler</servlet-name>
+        <servlet-class>harmo.Admin.OrdersReceivedView</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ordersReceivedHandler</servlet-name>
+        <url-pattern>/ordersReceived</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cancelOrders</servlet-name>
+        <servlet-class>harmo.Admin.CancelOrdersHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cancelOrders</servlet-name>
+        <url-pattern>/cancelOrdersHandler</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>deliveredOrders</servlet-name>
+        <servlet-class>harmo.Admin.DeliveredOrdersHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deliveredOrders</servlet-name>
+        <url-pattern>/deliveredOrdersHandler</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>deliveredOrdersView</servlet-name>
+        <servlet-class>harmo.Admin.DeliveredOrdersView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deliveredOrdersView</servlet-name>
+        <url-pattern>/deliveredOrdersView</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>canceledOrdersView</servlet-name>
+        <servlet-class>harmo.Admin.CanceledOrdersView</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>canceledOrdersView</servlet-name>
+        <url-pattern>/canceledOrdersView</url-pattern>
+    </servlet-mapping>
+    <welcome-file-list>
+        <welcome-file>signup.jsp</welcome-file>
+    </welcome-file-list>
+</web-app>
